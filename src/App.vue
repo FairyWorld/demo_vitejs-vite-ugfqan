@@ -10,11 +10,13 @@
       </li>
     </ul>
   </div>
+  <HelloWorld />
 </template>
 
 <!-- 业务逻辑 -->
 <script setup>
 import { ref } from 'vue';
+import HelloWorld from './components/HelloWorld.vue';
 
 const newTodo = ref(''); // 响应式变量newTodo，表示输入框的值
 const todos = ref([]); // 响应式变量todos，表示待办列表
